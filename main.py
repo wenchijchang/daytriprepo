@@ -146,14 +146,14 @@ def confirmation():
     elif destination_winner == "Hudson Valley":
         HV_entertainment_winner = select_HV_entertainment(HV_entertainment_options)
         HV_restaurant_winner = select_HV_restaurants(HV_restaurants)
-        print(f"We have now finished generating a day trip for you. \nDestination: {destination_winner} \nTransportation: {transportation_winner} \nEntertainment: {HV_entertainment_winner} \nRestaurant: {HV_entertainment_winner}")
+        print(f"We have now finished generating a day trip for you. \nDestination: {destination_winner} \nTransportation: {transportation_winner} \nEntertainment: {HV_entertainment_winner} \nRestaurant: {HV_restaurant_winner}")
         
     else:
         LI_entertainment_winner = select_LI_entertainment(LI_entertainment_options)
         LI_restaurant_winner = select_LI_restaurants(LI_restaurants)
-        print(f"We have now finished generating a day trip for you. \nDestination: {destination_winner} \nTransportation: {transportation_winner} \nEntertainment: {LI_entertainment_winner} \nRestaurant: {LI_entertainment_winner}")
+        print(f"We have now finished generating a day trip for you. \nDestination: {destination_winner} \nTransportation: {transportation_winner} \nEntertainment: {LI_entertainment_winner} \nRestaurant: {LI_restaurant_winner}")
 
 
 confirmation()
 
-# def day_trip_generator():
+def day_trip_generator():
