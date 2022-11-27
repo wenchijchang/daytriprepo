@@ -14,7 +14,7 @@ def greeting():
     Hello and Welcome! This daily trip generator is here to help you put together a fun day exploring New York!
     """)
 
-greeting()
+# greeting()
 
 def select_destination(destination_list):
     confirm_bool = True
@@ -27,9 +27,8 @@ def select_destination(destination_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
-
-destination_winner = select_destination(destinations)
-
+    return random_dest
+    destination_winner = select_destination(destinations)
 
 
 
@@ -44,8 +43,8 @@ def select_transportation(transportation_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
-
-transportation_winner = select_transportation(transportation_options)
+    return random_transp
+    transportation_winner = select_transportation(transportation_options)
 
 def select_NYC_entertainment(NYC_enterta_list):
     confirm_bool = True
@@ -58,8 +57,8 @@ def select_NYC_entertainment(NYC_enterta_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
-
-NYC_entertainment_winner = select_NYC_entertainment(NYC_entertainment_options)
+    return random_entertainment
+    NYC_entertainment_winner = select_NYC_entertainment(NYC_entertainment_options)
 
 
 def select_HV_entertainment(HV_enterta_list):
@@ -73,8 +72,8 @@ def select_HV_entertainment(HV_enterta_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
-
-HV_entertainment_winner = select_HV_entertainment(HV_entertainment_options)
+    return random_entertainment
+    HV_entertainment_winner = select_HV_entertainment(HV_entertainment_options)
 
 
 def select_LI_entertainment(LI_enterta_list):
@@ -88,8 +87,8 @@ def select_LI_entertainment(LI_enterta_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
-
-LI_entertainment_winner = select_LI_entertainment(LI_entertainment_options)
+    return random_entertainment
+    LI_entertainment_winner = select_LI_entertainment(LI_entertainment_options)
 
 
 def select_NYC_restaurants(NYC_rest_list):
@@ -103,9 +102,8 @@ def select_NYC_restaurants(NYC_rest_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
-
-
-NYC_restaurant_winner = select_NYC_restaurants(NYC_restaurants)
+    return random_restaurant
+    NYC_restaurant_winner = select_NYC_restaurants(NYC_restaurants)
 
 
 def select_HV_restaurants(HV_rest_list):
@@ -119,8 +117,8 @@ def select_HV_restaurants(HV_rest_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
-
-HV_restaurant_winner = select_HV_restaurants(HV_restaurants)
+    return random_restaurant
+    HV_restaurant_winner = select_HV_restaurants(HV_restaurants)
 
 
 def select_LI_restaurants(LI_rest_list):
@@ -134,5 +132,28 @@ def select_LI_restaurants(LI_rest_list):
         else:
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
+    return random_restaurant
+    LI_restaurant_winner = select_LI_restaurants(LI_restaurants)
 
-LI_restaurant_winner = select_LI_restaurants(LI_restaurants)
+def confirmation():
+    destination_winner = select_destination(destinations)
+    transportation_winner = select_transportation(transportation_options)
+    if destination_winner == "New York City":
+        NYC_entertainment_winner = select_NYC_entertainment(NYC_entertainment_options)
+        NYC_restaurant_winner = select_NYC_restaurants(NYC_restaurants)
+        print(f"We have now finished generating a day trip for you. \nDestination: {destination_winner} \nTransportation: {transportation_winner} \nEntertainment: {NYC_entertainment_winner} \nRestaurant: {NYC_restaurant_winner}")
+        
+    elif destination_winner == "Hudson Valley":
+        HV_entertainment_winner = select_HV_entertainment(HV_entertainment_options)
+        HV_restaurant_winner = select_HV_restaurants(HV_restaurants)
+        print(f"We have now finished generating a day trip for you. \nDestination: {destination_winner} \nTransportation: {transportation_winner} \nEntertainment: {HV_entertainment_winner} \nRestaurant: {HV_entertainment_winner}")
+        
+    else:
+        LI_entertainment_winner = select_LI_entertainment(LI_entertainment_options)
+        LI_restaurant_winner = select_LI_restaurants(LI_restaurants)
+        print(f"We have now finished generating a day trip for you. \nDestination: {destination_winner} \nTransportation: {transportation_winner} \nEntertainment: {LI_entertainment_winner} \nRestaurant: {LI_entertainment_winner}")
+
+
+confirmation()
+
+# def day_trip_generator():
