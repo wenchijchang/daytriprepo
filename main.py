@@ -28,7 +28,7 @@ def select_destination(destination_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_dest
-    destination_winner = select_destination(destinations)
+    # destination_winner = select_destination(destinations)
 
 
 
@@ -44,7 +44,7 @@ def select_transportation(transportation_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_transp
-    transportation_winner = select_transportation(transportation_options)
+    # transportation_winner = select_transportation(transportation_options)
 
 def select_NYC_entertainment(NYC_enterta_list):
     confirm_bool = True
@@ -58,7 +58,7 @@ def select_NYC_entertainment(NYC_enterta_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_entertainment
-    entertainment_winner = select_NYC_entertainment(NYC_entertainment_options)
+    # entertainment_winner = select_NYC_entertainment(NYC_entertainment_options)
 
 
 def select_HV_entertainment(HV_enterta_list):
@@ -73,7 +73,7 @@ def select_HV_entertainment(HV_enterta_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_entertainment
-    entertainment_winner = select_HV_entertainment(HV_entertainment_options)
+    # entertainment_winner = select_HV_entertainment(HV_entertainment_options)
 
 
 def select_LI_entertainment(LI_enterta_list):
@@ -88,7 +88,7 @@ def select_LI_entertainment(LI_enterta_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_entertainment
-    entertainment_winner = select_LI_entertainment(LI_entertainment_options)
+    # entertainment_winner = select_LI_entertainment(LI_entertainment_options)
 
 
 def select_NYC_restaurants(NYC_rest_list):
@@ -103,7 +103,7 @@ def select_NYC_restaurants(NYC_rest_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_restaurant
-    restaurant_winner = select_NYC_restaurants(NYC_restaurants)
+    # restaurant_winner = select_NYC_restaurants(NYC_restaurants)
 
 
 def select_HV_restaurants(HV_rest_list):
@@ -118,7 +118,7 @@ def select_HV_restaurants(HV_rest_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_restaurant
-    restaurant_winner = select_HV_restaurants(HV_restaurants)
+    # restaurant_winner = select_HV_restaurants(HV_restaurants)
 
 
 def select_LI_restaurants(LI_rest_list):
@@ -133,7 +133,7 @@ def select_LI_restaurants(LI_rest_list):
             confirm_bool = False
             print("Awsome! Glad that is decided. Let's move on!")
     return random_restaurant
-    restaurant_winner = select_LI_restaurants(LI_restaurants)
+    # restaurant_winner = select_LI_restaurants(LI_restaurants)
 
 def trip_plan_confirmation():
     destination_winner = select_destination(destinations)
